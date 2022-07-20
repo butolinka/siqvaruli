@@ -390,9 +390,9 @@ h4{
         align-items: center;
         margin: 0;
     }
-    body, html{
+   /* body, html{
         overflow: hidden;
-    }
+    } */
     .bookAnim{
         font-size: 18px;
     }
