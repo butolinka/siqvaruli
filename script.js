@@ -12,7 +12,7 @@ removeFocus=()=>{
 }
 
 function independenceGeorgia(){
-    const indepGeorgia = new Date ('May 26, 2022 18:00');
+    const indepGeorgia = new Date ('July 30, 2022 18:00');
     
     const now = new Date();
     const diff = indepGeorgia-now;
@@ -44,11 +44,11 @@ let timer=setInterval( independenceGeorgia, 1000);
 
 function hereIsIndependenceGeorgia(){
     const selebrateGID= document.querySelector('#happyGID');
-    selebrateGID.textContent="Happy Georgia Independance day! 05/26/2022"
+    selebrateGID.textContent="Let's enjoy beautiful music! 07/30/2022"
 }
 
 function summer(){
-    const summertime = new Date ('June 03, 2022 18:00');
+    const summertime = new Date ('August 06, 2022 18:00');
     
     const now = new Date();
     const diff = summertime-now;
@@ -80,11 +80,11 @@ let timerSummer=setInterval( summer, 1000);
 
 function hereIsSummer(){
     const selebrateS= document.querySelector('#happyS');
-    selebrateS.textContent="Here is summer! Enjoy! 06/03/2022"
+    selebrateS.textContent="Today's special is honey backlava as a compliment! Enjoy! 08/06/2022"
 }
 
 function independanceDay(){
-    const indepDay = new Date ('July 04, 2022 18:00');
+    const indepDay = new Date ('September 03, 2022 18:00');
     
     const now = new Date();
     const diff = indepDay-now;
@@ -116,7 +116,7 @@ let timerIndep=setInterval( independanceDay, 1000);
 
 function hereIsIndependanceDay(){
     const selebrateID= document.querySelector('#happyID');
-    selebrateID.textContent="Happy Independance Day! 07/04/2022"
+    selebrateID.textContent="Happy Labor Day Weekend! 09/03/2022"
 }
 
 gsap.from('h1',{
