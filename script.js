@@ -1,3 +1,4 @@
+// menu
 const items=document.querySelectorAll(".item");
 items.forEach(item=>{
     item.addEventListener("click", ()=>{
@@ -11,114 +12,118 @@ removeFocus=()=>{
     })
 }
 
-function independenceGeorgia(){
-    const indepGeorgia = new Date ('July 30, 2022 18:00');
+// first event countdown
+function firstEvent(){
+    const firstevent = new Date ('July 30, 2022 18:00');
     
     const now = new Date();
-    const diff = indepGeorgia-now;
+    const diff = firstevent-now;
      
     const msInSecond=1000;
     const msInMinute=60*1000;
     const msInHour=60*60*1000;
     const msInDay=24*60*60*1000;
     const DisplayDay=Math.floor(diff/msInDay);
-    document.querySelector('#georgiad').textContent=DisplayDay;
+    document.querySelector('#firsteventd').textContent=DisplayDay;
     const DisplayHour=Math.floor((diff%msInDay)/msInHour);
-    document.querySelector('#georgiah').textContent=DisplayHour;
+    document.querySelector('#firsteventh').textContent=DisplayHour;
     const DisplayMinutes=Math.floor((diff%msInHour)/msInMinute);
-    document.querySelector('#georgiam').textContent=DisplayMinutes;
+    document.querySelector('#firsteventm').textContent=DisplayMinutes;
     const DisplaySeconds=Math.floor((diff%msInMinute)/msInSecond);
-    document.querySelector('#georgias').textContent=DisplaySeconds;
+    document.querySelector('#firstevents').textContent=DisplaySeconds;
 
     if (diff<=0){
-        document.querySelector('#georgiad').textContent=0;
-        document.querySelector('#georgiah').textContent=0;
-        document.querySelector('#georgiam').textContent=0;
-        document.querySelector('#georgias').textContent=0;
-        clearInterval(timer);
+        document.querySelector('#firsteventd').textContent=0;
+        document.querySelector('#firsteventh').textContent=0;
+        document.querySelector('#firsteventm').textContent=0;
+        document.querySelector('#firstevents').textContent=0;
+        clearInterval(timerFirst);
 
-        hereIsIndependenceGeorgia();
+        hereIsFirstEvent();
     }
 }
-let timer=setInterval( independenceGeorgia, 1000);
+let timerFirst=setInterval( firstEvent, 1000);
 
-function hereIsIndependenceGeorgia(){
-    const selebrateGID= document.querySelector('#happyGID');
-    selebrateGID.textContent="Let's enjoy Georgian music! 07/30/2022"
+function hereIsFirstEvent(){
+    const selebrateFE= document.querySelector('#happyFE');
+    selebrateFE.textContent="Let's enjoy Georgian music! 07/30/2022"
 }
 
-function summer(){
-    const summertime = new Date ('August 06, 2022 18:00');
+// second event countdown
+function secondEvent(){
+    const secondevent = new Date ('August 06, 2022 18:00');
     
     const now = new Date();
-    const diff = summertime-now;
+    const diff = secondevent-now;
      
     const msInSecond=1000;
     const msInMinute=60*1000;
     const msInHour=60*60*1000;
     const msInDay=24*60*60*1000;
     const DisplayDay=Math.floor(diff/msInDay);
-    document.querySelector('#summerd').textContent=DisplayDay;
+    document.querySelector('#secondeventd').textContent=DisplayDay;
     const DisplayHour=Math.floor((diff%msInDay)/msInHour);
-    document.querySelector('#summerh').textContent=DisplayHour;
+    document.querySelector('#secondeventh').textContent=DisplayHour;
     const DisplayMinutes=Math.floor((diff%msInHour)/msInMinute);
-    document.querySelector('#summerm').textContent=DisplayMinutes;
+    document.querySelector('#secondeventm').textContent=DisplayMinutes;
     const DisplaySeconds=Math.floor((diff%msInMinute)/msInSecond);
-    document.querySelector('#summers').textContent=DisplaySeconds;
+    document.querySelector('#secondevents').textContent=DisplaySeconds;
 
     if (diff<=0){
-        document.querySelector('#summerd').textContent=0;
-        document.querySelector('#summerh').textContent=0;
-        document.querySelector('#summerm').textContent=0;
-        document.querySelector('#summers').textContent=0;
-        clearInterval(timerSummer);
+        document.querySelector('#secondeventd').textContent=0;
+        document.querySelector('#secondeventh').textContent=0;
+        document.querySelector('#secondeventm').textContent=0;
+        document.querySelector('#secondevents').textContent=0;
+        clearInterval(timerSecond);
 
-        hereIsSummer();
+        hereIsSecondEvent();
     }
 }
-let timerSummer=setInterval( summer, 1000);
+let timerSecond=setInterval( secondEvent, 1000);
 
-function hereIsSummer(){
-    const selebrateS= document.querySelector('#happyS');
-    selebrateS.textContent="Sheff's special honey backlava for you as a complement! Enjoy! 08/06/2022"
+function hereIsSecondEvent(){
+    const selebrateSE= document.querySelector('#happySE');
+    selebrateSE.textContent="Sheff's special honey backlava for you as a complement! Enjoy! 08/06/2022"
 }
 
-function independanceDay(){
-    const indepDay = new Date ('September 03, 2022 18:00');
+// third event countdown
+function thirdEvent(){
+    const thirdevent = new Date ('September 03, 2022 18:00');
     
     const now = new Date();
-    const diff = indepDay-now;
+    const diff = thirdevent-now;
      
     const msInSecond=1000;
     const msInMinute=60*1000;
     const msInHour=60*60*1000;
     const msInDay=24*60*60*1000;
     const DisplayDay=Math.floor(diff/msInDay);
-    document.querySelector('#indepd').textContent=DisplayDay;
+    document.querySelector('#thirdeventd').textContent=DisplayDay;
     const DisplayHour=Math.floor((diff%msInDay)/msInHour);
-    document.querySelector('#indeph').textContent=DisplayHour;
+    document.querySelector('#thirdeventh').textContent=DisplayHour;
     const DisplayMinutes=Math.floor((diff%msInHour)/msInMinute);
-    document.querySelector('#indepm').textContent=DisplayMinutes;
+    document.querySelector('#thirdeventm').textContent=DisplayMinutes;
     const DisplaySeconds=Math.floor((diff%msInMinute)/msInSecond);
-    document.querySelector('#indeps').textContent=DisplaySeconds;
+    document.querySelector('#thirdevents').textContent=DisplaySeconds;
 
     if (diff<=0){
-        document.querySelector('#indepd').textContent=0;
-        document.querySelector('#indeph').textContent=0;
-        document.querySelector('#indepm').textContent=0;
-        document.querySelector('#indeps').textContent=0;
-        clearInterval(timerIndep);
+        document.querySelector('#thirdeventd').textContent=0;
+        document.querySelector('#thirdeventh').textContent=0;
+        document.querySelector('#thirdeventm').textContent=0;
+        document.querySelector('#thirdevents').textContent=0;
+        clearInterval(timerThird);
 
-        hereIsIndependanceDay();
+        hereIsThirdEvent();
     }
 }
-let timerIndep=setInterval( independanceDay, 1000);
+let timerThird=setInterval( thirdEvent, 1000);
 
-function hereIsIndependanceDay(){
-    const selebrateID= document.querySelector('#happyID');
-    selebrateID.textContent="Happy Labor Day weekend! 09/03/2022"
+function hereIsThirdEvent(){
+    const selebrateTE= document.querySelector('#happyTE');
+    selebrateTE.textContent="Happy Labor Day weekend! 09/03/2022"
 }
 
+// animations
 gsap.from('h1',{
     duration:2, opacity:0
 })
