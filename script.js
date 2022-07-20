@@ -44,7 +44,7 @@ let timer=setInterval( independenceGeorgia, 1000);
 
 function hereIsIndependenceGeorgia(){
     const selebrateGID= document.querySelector('#happyGID');
-    selebrateGID.textContent="Let's enjoy beautiful music! 07/30/2022"
+    selebrateGID.textContent="Let's enjoy Georgian music! 07/30/2022"
 }
 
 function summer(){
@@ -80,7 +80,7 @@ let timerSummer=setInterval( summer, 1000);
 
 function hereIsSummer(){
     const selebrateS= document.querySelector('#happyS');
-    selebrateS.textContent="Today's special is honey backlava as a compliment! Enjoy! 08/06/2022"
+    selebrateS.textContent="Sheff's special honey backlava for you as a complement! Enjoy! 08/06/2022"
 }
 
 function independanceDay(){
@@ -116,7 +116,7 @@ let timerIndep=setInterval( independanceDay, 1000);
 
 function hereIsIndependanceDay(){
     const selebrateID= document.querySelector('#happyID');
-    selebrateID.textContent="Happy Labor Day Weekend! 09/03/2022"
+    selebrateID.textContent="Happy Labor Day weekend! 09/03/2022"
 }
 
 gsap.from('h1',{
@@ -139,3 +139,5 @@ gsap.from('.bookAnim',{
 })
 
 gsap.from('.picture',{ scale:0.1, duration:2})
+
+
